@@ -1,38 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="mystyles.css">
-    <title>My hobby</title>
-</head>
-<body>
-<div class="header">
-    <div class="inner-header">
-        <div class="logo-container">
-            <h1>Моё хобби</h1>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./mystyles.css">
+        <title>Architectural projects</title>
+    </head>
+    <body class="page">
+    <nav class="navigation">
+        <div id="nav-elements">
+            <p class="nav-el" id="Admiral">Rostov-On-Don Admiral</p>
+            <p class="nav-el" id="Thieves">Sochi Thieves</p>
+            <p class="nav-el" id="Patriotic">Rostov-On-Don Patriotic</p>
         </div>
-
-        <ul class="navigation">
-            <a href="#"><li>Главная</li></a>
-            <a href="#"><li>Обо мне</li></a>
-            <a href="#"><li>Обратная связь</li></a>
-        </ul>
-    </div>
-</div>
-<div class="content">
-    <h1 class="content-header">Шахматы</h1>
-    <hr>
-    <div class="main-content">
-        <img src="figures-on-chessboard-isometric-illustration_575670-185.avif" width="450" height="300">
-        <div class="text">
-            <p>Я играю в шахматы уже примерно 5 лет. За это время мне удалось сильно улучшить свои результаты
-                на основных игровых площадках:</p>
-            <ul>
-                <li>chess.com: 1700 (rapid)</li>
-                <li>lichess.org: 2000 (rapid)</li>
-            </ul>
+    </nav>
+    <main id="content">
+        <article id="description">
+            <header id="top-header">
+                <h1 id="main-header">Completed <br> projects</h1>
+                <div id="line"></div>
+            </header>
+            <p id="description-text">Only a small part of the work performed by our company is presented on the site.
+            For 14 years on in the construction market we have made happy more than 1000 families</p>
+            <section class="info-section">
+                <section>
+                    <h2 class="headers">City:</h2>
+                    <p id="city" class="info"></p>
+                </section>
+                <section>
+                    <h2 class="headers">Apartment area:</h2>
+                    <p id="area" class="info"></p>
+                </section>
+                <section>
+                    <h2 class="headers">Repair time:</h2>
+                    <p id="repair-time" class="info"></p>
+                </section>
+                <section>
+                    <h2 class="headers">Repair cost:</h2>
+                    <p id="repair-cost" class="info"></p>
+                </section>
+            </section>
+            <nav id="bottom-nav">
+                <img src="./GroupLeft.png" id="prev">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <div class="circle" id="circle3"></div>
+                <img src="./GroupRight.png" id="next">
+            </nav>
+        </article>
+        <div id="pictures">
+            <img src="" id="picture">
         </div>
-    </div>
-</div>
-</body>
+    </main>
+    <script src="./index.js"></script>
+    </body>
 </html>
+

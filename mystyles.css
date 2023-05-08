@@ -1,56 +1,187 @@
-.inner-header{
+.page {
+    background-color: #131313;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+}
+
+.navigation {
+    /*background-color: antiquewhite;*/
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    justify-content: flex-end;
+    top: 10%;
+    font-family: 'Yeseva One', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+#nav-elements {
+    /*background-color: antiquewhite;*/
+    display: flex;
+    width: 60%;
+}
+.nav-el {
+    margin-right: 25px;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: color 0.7s ease-in-out;
+}
+
+.nav-el:hover {
+    color: #E3B873;
+    text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+}
+.nav-el.active {
+    color: #E3B873;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+#content {
+    display: flex;
+    margin: 0 auto;
+    gap: 5%;
+}
+
+#description {
+    /*background-color: aqua;*/
+    max-height: 700px;
+    max-width: 37%;
+}
+
+#description-text {
+    /*background-color: #E3B873;*/
+    margin-top: 0;
+    font-family: 'Nunito Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+#pictures {
+    max-width: 54%;
+    max-height: 450px;
+}
+
+#pictures img {
+    width: 100%;
+    height: 100%;
+}
+
+#picture {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+}
+
+#picture.fade {
+    opacity: 0;
+}
+
+#top-header {
+    /*background-color: aquamarine;*/
+    display: flex;
+    align-items: flex-start;
+}
+
+#main-header {
+    font-family: 'Yeseva One', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-top: 0;
+}
+
+#line {
+    background-color: #E3B873;
+    height: 2px;
+    width: 110px;
+    margin-top: 14%;
+}
+
+.headers {
+    /*background-color: cornflowerblue;*/
+    font-family: 'Yeseva One', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+
+}
+
+.info-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.info {
+    /*background-color: blueviolet;*/
+    height: 25px;
+    /*margin-bottom: -5px;*/
+    margin-top: -3px;
+    font-family: 'Nunito Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+}
+
+.info.fade {
+    opacity: 0;
+}
+
+#bottom-nav {
+    /*background-color: #131313;*/
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #0086fe;
-
+    width: 70%;
 }
 
-.logo-container{
-    color: white;
-    background-color: #0086fe;
-    margin-left: 5%;
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 3px;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
 
-.navigation{
-    float: right;
-    height: 100%;
-    background-color: #0086fe;
-    margin-right: 5%;
+.circle.active {
+    transform: scale(1.35);
+    background-color: white;
 }
 
-.navigation a{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-    background-color: #0086fe;
-    text-decoration: none;
-}
-
-.navigation a li{
-    vertical-align: middle;
-    display: table-cell;
-    font-size: 20px;
-    color: white;
-}
-
-.navigation a:hover{
-    background-color: #00f5fd;
-    color: black;
-}
-
-hr {
-    height: 3px;
-}
-.content-header {
-    font-family: 'Open Sans', sans-serif;
-}
-.content {
-    width: 75%;
-    margin: 0 auto;
-}
-.main-content {
-    display: flex;
-    justify-content: center;
+#prev:hover, #next:hover {
+    transform: scale(1.1); /* Increases the size of the arrow */
+    filter: brightness(150%); /* Adds backlighting effect */
+    cursor: pointer;
 }
